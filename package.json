@@ -1,0 +1,23 @@
+{
+  "name": "gian_jonathan_game_project",
+  "version": "1.0.0",
+  "description": "A game database project using Node.js, Express, and MariaDB.",
+  "main": "index.js",
+  "scripts": {
+    "create": "mariadb < Gian_Jonathan_game_createStatements.sql",
+    "start": "concurrently \"node indexREST.js\" \"node indexSPA.js\"",
+    "server": "node indexREST.js",
+    "spa": "node indexSPA.js"
+  },
+  "keywords": [],
+  "author": "Jonathan Gian",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "concurrently": "^9.1.2",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mariadb": "^3.4.0",
+    "node-fetch": "^3.3.2"
+  }
+}

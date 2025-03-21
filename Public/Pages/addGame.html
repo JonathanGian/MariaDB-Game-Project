@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Game</title>
+    <link rel="stylesheet" href="../Styles/addGame.css">
+</head>
+<body>
+    <h1>Add New Game</h1>
+    <div class="form-container">
+    <form id="addGameForm">
+        <input type="number" id="gameNumber" placeholder="Game Number" required>
+        <input type="text" id="gameName" placeholder="Game Name" required>
+        <input type="text" id="gameGenre" placeholder="Genre" required>
+        <input type="number" id="gameYear" placeholder="Year" required>
+        <input type="text" id="gameRating" placeholder="Rating" required>
+        <button type="submit">Add Game</button>
+    </form>
+    <div>
+        <p id="resultMessage"></p>
+    </div>
+</div>
+<button class="backBtn"><a href="/">Back to Home</a></button>
+    <script src="../JS/addGame.js"></script>
+</body>
+</html>
